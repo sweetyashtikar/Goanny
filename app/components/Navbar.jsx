@@ -48,13 +48,13 @@ const navLinks = [
       { name: "HIMS", path: "/product/hims" },
     ],
   },
-  {
-    name: "CAREER",
-    path: "/career",
-    subMenu: [
-      { name: "IT Internship & Certification Program", path: "/career/internship-program" },
-    ],
-  },
+  // {
+  //   name: "CAREER",
+  //   path: "/career",
+  //   subMenu: [
+  //     { name: "IT Internship & Certification Program", path: "/career/internship-program" },
+  //   ],
+  // },
   { name: "CONTACT", path: "/contact" },
 ];
 
