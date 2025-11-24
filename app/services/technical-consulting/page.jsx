@@ -126,7 +126,7 @@ export default function TechnicalConsulting() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-slate-100">
       {/* Hero Section with Image Background */}
-      <div className="relative overflow-hidden bg-gradient-to-br from-slate-700 via-slate-600 to-blue-800 py-24">
+      <div className="relative overflow-hidden bg-gradient-to-br from-slate-700 via-slate-600 to-blue-800 py-12">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxjaXJjbGUgc3Ryb2tlPSIjZmZmIiBzdHJva2Utb3BhY2l0eT0iLjMiIGN4PSIzMCIgY3k9IjMwIiByPSIyNSIvPjwvZz48L3N2Zz4=')] bg-repeat"></div>
         </div>
@@ -151,23 +151,14 @@ export default function TechnicalConsulting() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-3xl blur-2xl opacity-20"></div>
               <div className="relative bg-slate-700/50 backdrop-blur-xl rounded-3xl p-12 border border-white/10">
                 <div className="flex items-center justify-center">
-                  <div className="relative">
-                    <svg className="w-64 h-64" viewBox="0 0 200 200">
-                      {/* Human hand */}
-                      <path d="M60 120 L80 100 L90 110 L85 130 L70 135 Z" fill="#e0e7ff" opacity="0.8"/>
-                      {/* Robot hand */}
-                      <path d="M140 120 L120 100 L110 110 L115 130 L130 135 Z" fill="#dbeafe" opacity="0.8"/>
-                      {/* Connection lines */}
-                      <line x1="85" y1="115" x2="115" y2="115" stroke="#3b82f6" strokeWidth="3" strokeDasharray="5,5"/>
-                      <circle cx="100" cy="115" r="25" fill="#3b82f6" opacity="0.2"/>
-                      <text x="100" y="125" textAnchor="middle" fill="white" fontSize="35">🤝</text>
-                    </svg>
-                    <div className="absolute top-0 right-0 bg-blue-500 text-white p-3 rounded-xl shadow-lg">
-                      <span className="text-2xl">💡</span>
-                    </div>
-                    <div className="absolute bottom-0 left-0 bg-indigo-500 text-white p-3 rounded-xl shadow-lg">
-                      <span className="text-2xl">🎯</span>
-                    </div>
+                     <div className="flex-1 relative">
+              <img 
+                src="/360_F_103617547_RkHSQJ43EBR7C9ZcHIIFU2r7b1ZlC0IU.jpg
+" 
+                alt="React Development" 
+                className="rounded-2xl shadow-2xl"
+              />
+                    
                   </div>
                 </div>
               </div>

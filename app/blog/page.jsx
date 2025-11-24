@@ -3,51 +3,27 @@ import { useState } from 'react';
 
 export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
+
   const services = [
     {
       title: "React JS Development",
       description: "Creating reusable and modular UI components that can be easily integrated into the React.js framework.",
       color: "from-blue-500 to-blue-600",
-      icon: "⚛️",
-      link: "/services/reactjs-development"
+      icon: "⚛️"
     },
     {
       title: "Web Design & Development",
       description: "Creating wireframes to map out the structure and functionality of the website, followed by interactive prototypes.",
       color: "from-purple-500 to-pink-600",
-      icon: "🎨",
-      link: "/services/web-design-development"
+      icon: "🎨"
     },
     {
       title: "React Native Development",
       description: "Designing the app's interface to ensure it is visually appealing and user-friendly, aligning with brand guidelines.",
       color: "from-indigo-500 to-purple-600",
-      icon: "📱",
-      link: "/services/react-native"
-    },
-    {
-      title: "Database Development",
-      description: "Professional database design, optimization, and management solutions for your business needs.",
-      color: "from-green-500 to-emerald-600",
-      icon: "🗄️",
-      link: "/services/database-development"
-    },
-    {
-      title: "Mobile Application Development",
-      description: "Native and cross-platform mobile apps for iOS and Android platforms.",
-      color: "from-orange-500 to-red-600",
-      icon: "📱",
-      link: "/services/mobile-application-development"
-    },
-    {
-      title: "E-commerce Development",
-      description: "Complete e-commerce solutions with payment integration and inventory management.",
-      color: "from-cyan-500 to-blue-600",
-      icon: "🛒",
-      link: "/services/ecommerce-development"
+      icon: "📱"
     }
   ];
-
 
   const stats = [
     { number: "80+", label: "Collective Experience", icon: "⭐" },
@@ -76,9 +52,21 @@ export default function HomePage() {
     }
   ];
 
+  // Logo slider data
+  const clientLogos = [
+    { name: "Google", text: "GOOGLE" },
+    { name: "Microsoft", text: "MICROSOFT" },
+    { name: "Amazon", text: "AMAZON" },
+    { name: "Meta", text: "META" },
+    { name: "Apple", text: "APPLE" },
+    { name: "Netflix", text: "NETFLIX" },
+    { name: "Tesla", text: "TESLA" },
+    { name: "Samsung", text: "SAMSUNG" }
+  ];
+
   return (
     <div className="min-h-screen bg-white overflow-hidden">
-      {/* Hero Section - No Top Padding */}
+      {/* Hero Section */}
       <section className="relative min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
         {/* Animated Background */}
         <div className="absolute inset-0">
@@ -90,11 +78,10 @@ export default function HomePage() {
         {/* Grid Pattern */}
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxIDAgNiAyLjY5IDYgNnMtMi42OSA2LTYgNi02LTIuNjktNi02IDIuNjktNiA2LTZ6TTI0IDQyYzMuMzEgMCA2IDIuNjkgNiA2cy0yLjY5IDYtNiA2LTYtMi42OS02LTYgMi42OS02IDYtNnoiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii4wNSIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9nPjwvc3ZnPg==')] opacity-30"></div>
 
-        <div className="relative max-w-7xl mx-auto px-6 pt-12 pb-20">
+        <div className="relative max-w-7xl mx-auto px-6 pt-32 pb-20">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
-              
-              <h1 className="text-5xl md:text-5xl font-bold text-white leading-tight">
+              <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
                 Best Software
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">
                   Development
@@ -121,7 +108,8 @@ export default function HomePage() {
               <div className="relative z-10 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-3xl p-8 backdrop-blur-sm border border-white/10">
                 <div className="bg-white/10 backdrop-blur-xl rounded-2xl p-16 flex items-center justify-center">
                   <div className="text-center">
-                    <img src='/Slider_img-277x300.png' alt=''/>
+                    <div className="text-8xl mb-4">💻</div>
+                    <p className="text-white text-lg font-semibold">Software Development</p>
                   </div>
                 </div>
               </div>
@@ -134,6 +122,49 @@ export default function HomePage() {
           <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
           </svg>
+        </div>
+      </section>
+
+      {/* Logo Slider Section */}
+      <section className="py-16 bg-white border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">Trusted by Leading Companies</h3>
+            <p className="text-gray-600">We work with industry leaders worldwide</p>
+          </div>
+          
+          {/* Logo Slider Container */}
+          <div className="relative overflow-hidden">
+            {/* Gradient overlays */}
+            <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10"></div>
+            <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10"></div>
+            
+            {/* Sliding logos */}
+            <div className="flex animate-slide">
+              {/* First set of logos */}
+              {clientLogos.map((logo, index) => (
+                <div
+                  key={`first-${index}`}
+                  className="flex-shrink-0 mx-8 grayscale hover:grayscale-0 transition-all duration-300"
+                >
+                  <div className="w-40 h-24 bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl flex items-center justify-center shadow-md hover:shadow-xl transition-all hover:scale-105">
+                    <span className="text-2xl font-bold text-gray-700">{logo.text}</span>
+                  </div>
+                </div>
+              ))}
+              {/* Duplicate set for seamless loop */}
+              {clientLogos.map((logo, index) => (
+                <div
+                  key={`second-${index}`}
+                  className="flex-shrink-0 mx-8 grayscale hover:grayscale-0 transition-all duration-300"
+                >
+                  <div className="w-40 h-24 bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl flex items-center justify-center shadow-md hover:shadow-xl transition-all hover:scale-105">
+                    <span className="text-2xl font-bold text-gray-700">{logo.text}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -419,6 +450,26 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Add CSS for animation */}
+      <style jsx>{`
+        @keyframes slide {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        
+        .animate-slide {
+          animation: slide 30s linear infinite;
+        }
+        
+        .animate-slide:hover {
+          animation-play-state: paused;
+        }
+      `}</style>
     </div>
   );
 }

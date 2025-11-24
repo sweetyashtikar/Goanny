@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, ChevronDown } from "lucide-react";
+import path from "path";
 
 const navLinks = [
   { name: "HOME", path: "/" },
@@ -28,6 +29,10 @@ const navLinks = [
           { name: "Product Design & Development", path: "/services/product-design-development" },
           { name: "ReactJs", path: "/services/reactjs" },
           { name: "UI/UX Design", path: "/services/ui-ux-design" },
+          { name: "Chatbot Development", path: "/services/chatbot-development" },
+          { name: "Andriod iOS App Development", path: "/services/andriod-ios-app-development" },
+          {name: "AI-Machine-Learning", path: "/services/ai-machine-learning"},
+          {name:"Natural Language Processing (NLP)", path: "/nlp"}
         ]
       },
       {
@@ -39,22 +44,24 @@ const navLinks = [
     ],
   },
   { name: "OUR WORK", path: "/work" },
+  { name: "PORTFOLIO", path: "/portfolio" },
   {
     name: "OUR PRODUCTS",
     path: "/product",
     subMenu: [
-      { name: "GoSmartTea", path: "/product/gosmartea"  },
+      { name: "GoSmartTea", path: "/product/gosmartea" },
       { name: "Mining", path: "/product/mining" },
       { name: "HIMS", path: "/product/hims" },
     ],
   },
-  // {
-  //   name: "CAREER",
-  //   path: "/career",
-  //   subMenu: [
-  //     { name: "IT Internship & Certification Program", path: "/career/internship-program" },
-  //   ],
-  // },
+  {
+    name: "CAREER",
+    path: "/career",
+    subMenu: [
+      { name: "IT Internship & Certification Program", path: "/career/internship-program" },
+    ],
+  },
+  { name: "BLOG", path: "/blog" },
   { name: "CONTACT", path: "/contact" },
 ];
 
@@ -77,19 +84,18 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-lg py-2" : "bg-white/98 backdrop-blur-md py-3"
-      }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-white shadow-lg py-2" : "bg-white/98 backdrop-blur-md py-3"
+        }`}
     >
       <div className="max-w-[1500px] mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center hover:opacity-90 transition-opacity">
-          <Image 
-            src="/LOGO-removebg-preview.png" 
-            width={130} 
-            height={100} 
-            alt="Expert Logo" 
-            priority 
+          <Image
+            src="/LOGO-removebg-preview.png"
+            width={130}
+            height={100}
+            alt="Expert Logo"
+            priority
             className="object-contain"
           />
         </Link>
@@ -108,12 +114,13 @@ export default function Navbar() {
               </Link>
             ) : (
               <div key={item.name} className="relative group">
-                <button
+                <Link
+                  href={item.path}
                   className="flex items-center gap-1 px-3 py-2 text-[13px] font-bold text-gray-700 hover:text-blue-600 transition-colors uppercase tracking-wide"
                 >
                   {item.name}
                   <ChevronDown className="w-3.5 h-3.5 group-hover:rotate-180 transition-transform duration-300" />
-                </button>
+                </Link>
 
                 {/* Modern Dropdown - Two Column for Services */}
                 <div className="absolute left-0 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
@@ -126,11 +133,10 @@ export default function Navbar() {
                           {item.subMenu.map((section, idx) => (
                             <button
                               key={idx}
-                              className={`w-full text-left px-4 py-3 text-sm font-bold uppercase tracking-wide rounded-lg transition-all mb-2 ${
-                                idx === 0
+                              className={`w-full text-left px-4 py-3 text-sm font-bold uppercase tracking-wide rounded-lg transition-all mb-2 ${idx === 0
                                   ? "bg-white text-gray-800 shadow-sm"
                                   : "text-gray-600 hover:bg-white hover:text-gray-800"
-                              }`}
+                                }`}
                             >
                               {section.category}
                               <ChevronDown className="w-4 h-4 inline-block ml-2" />
@@ -212,17 +218,24 @@ export default function Navbar() {
                 </Link>
               ) : (
                 <div key={item.name}>
-                  <button
-                    onClick={() => toggle(item.name)}
-                    className="flex justify-between items-center w-full px-4 py-3 text-sm font-bold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-all uppercase"
-                  >
-                    {item.name}
-                    <ChevronDown
-                      className={`w-4 h-4 transition-transform duration-300 ${
-                        openMenu === item.name ? "rotate-180" : ""
-                      }`}
-                    />
-                  </button>
+                  <div className="flex items-center gap-2">
+                    <Link
+                      href={item.path}
+                      onClick={() => setMobileOpen(false)}
+                      className="flex-1 px-4 py-3 text-sm font-bold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-all uppercase"
+                    >
+                      {item.name}
+                    </Link>
+                    <button
+                      onClick={() => toggle(item.name)}
+                      className="px-3 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-all"
+                    >
+                      <ChevronDown
+                        className={`w-4 h-4 transition-transform duration-300 ${openMenu === item.name ? "rotate-180" : ""
+                          }`}
+                      />
+                    </button>
+                  </div>
 
                   {openMenu === item.name && (
                     <div className="mt-2 ml-3 space-y-1 bg-gray-50 rounded-lg p-3">

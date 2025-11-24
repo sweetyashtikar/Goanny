@@ -131,7 +131,7 @@ export default function UIUXDesign() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-purple-50">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-500 text-white py-20 px-6 overflow-hidden">
+      <div className="relative bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-500 text-white py-12 px-6 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>

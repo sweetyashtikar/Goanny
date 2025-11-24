@@ -109,7 +109,7 @@ export default function SupportManagement() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-r from-slate-700 via-slate-600 to-slate-800 text-white py-20 px-6">
+      <div className="relative overflow-hidden bg-gradient-to-r from-slate-700 via-slate-600 to-slate-800 text-white py-12 px-6">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
           <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-purple-500 rounded-full blur-3xl"></div>

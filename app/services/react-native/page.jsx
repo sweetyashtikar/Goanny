@@ -182,9 +182,9 @@ export default function ReactNative() {
           </div>
 
           <div className="relative">
-            <div className="bg-gradient-to-br from-purple-100 to-blue-100 rounded-3xl p-12 shadow-xl">
+            <div className="bg-gradient-to-br from-purple-100 to-blue-100 rounded-1xl p-12 shadow-xl">
               <img 
-                src="/api/placeholder/500/400" 
+                src="/app-development-1.gif" 
                 alt="React Native Development" 
                 className="rounded-2xl shadow-2xl"
               />

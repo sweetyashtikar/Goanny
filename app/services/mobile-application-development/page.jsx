@@ -84,7 +84,7 @@ export default function MobileAppDevelopment() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-indigo-700 to-blue-800 py-24">
+      <div className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-indigo-700 to-blue-800 py-12">
         <div className="absolute inset-0">
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
           <div className="absolute top-20 right-1/4 w-96 h-96 bg-indigo-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
@@ -113,7 +113,7 @@ export default function MobileAppDevelopment() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-3xl blur-2xl opacity-30"></div>
               <img 
-                src="/api/placeholder/500/400" 
+                src="/mobile-application-development-guidelines-riseuplabs.png" 
                 alt="Mobile App Development" 
                 className="relative rounded-3xl shadow-2xl"
               />
@@ -207,11 +207,7 @@ export default function MobileAppDevelopment() {
           <div className="relative grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="bg-white/90 backdrop-blur-xl rounded-3xl p-8 shadow-2xl">
-                <img 
-                  src="/api/placeholder/400/300" 
-                  alt="App Development Benefits" 
-                  className="rounded-2xl mb-6"
-                />
+                
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center text-white font-bold">

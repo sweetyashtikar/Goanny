@@ -90,7 +90,7 @@ export default function ReactDevelopmentPage() {
             </div>
             <div className="flex-1 relative">
               <img 
-                src="/api/placeholder/600/400" 
+                src="/9.jpg" 
                 alt="React Development" 
                 className="rounded-2xl shadow-2xl"
               />
