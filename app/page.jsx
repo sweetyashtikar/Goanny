@@ -1,58 +1,63 @@
-"use client"
-import { useState } from 'react';
+"use client";
+import { useState } from "react";
 
 export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const services = [
     {
       title: "React JS Development",
-      description: "Creating reusable and modular UI components that can be easily integrated into the React.js framework.",
+      description:
+        "Creating reusable and modular UI components that can be easily integrated into the React.js framework.",
       color: "from-blue-500 to-blue-600",
       icon: "⚛️",
-      link: "/services/reactjs-development"
+      link: "/services/reactjs-development",
     },
     {
       title: "Web Design & Development",
-      description: "Creating wireframes to map out the structure and functionality of the website, followed by interactive prototypes.",
+      description:
+        "Creating wireframes to map out the structure and functionality of the website, followed by interactive prototypes.",
       color: "from-purple-500 to-pink-600",
       icon: "🎨",
-      link: "/services/web-design-development"
+      link: "/services/web-design-development",
     },
     {
       title: "React Native Development",
-      description: "Designing the app's interface to ensure it is visually appealing and user-friendly, aligning with brand guidelines.",
+      description:
+        "Designing the app's interface to ensure it is visually appealing and user-friendly, aligning with brand guidelines.",
       color: "from-indigo-500 to-purple-600",
       icon: "📱",
-      link: "/services/react-native"
+      link: "/services/react-native",
     },
     {
       title: "Database Development",
-      description: "Professional database design, optimization, and management solutions for your business needs.",
+      description:
+        "Professional database design, optimization, and management solutions for your business needs.",
       color: "from-green-500 to-emerald-600",
       icon: "🗄️",
-      link: "/services/database-development"
+      link: "/services/database-development",
     },
     {
       title: "Mobile Application Development",
-      description: "Native and cross-platform mobile apps for iOS and Android platforms.",
+      description:
+        "Native and cross-platform mobile apps for iOS and Android platforms.",
       color: "from-orange-500 to-red-600",
       icon: "📱",
-      link: "/services/mobile-application-development"
+      link: "/services/mobile-application-development",
     },
     {
       title: "E-commerce Development",
-      description: "Complete e-commerce solutions with payment integration and inventory management.",
+      description:
+        "Complete e-commerce solutions with payment integration and inventory management.",
       color: "from-cyan-500 to-blue-600",
       icon: "🛒",
-      link: "/services/ecommerce-development"
-    }
+      link: "/services/ecommerce-development",
+    },
   ];
-
 
   const stats = [
     { number: "80+", label: "Collective Experience", icon: "⭐" },
     { number: "500+", label: "Happy Clients", icon: "⭐" },
-    { number: "70+", label: "Launch of Websites", icon: "⭐" }
+    { number: "70+", label: "Launch of Websites", icon: "⭐" },
   ];
 
   const blogs = [
@@ -60,20 +65,20 @@ export default function HomePage() {
       date: "November 10, 2025",
       title: "Inside Nano Banana: A Hands-On Guide...",
       category: "Technology",
-      gradient: "from-purple-500 to-pink-500"
+      gradient: "from-purple-500 to-pink-500",
     },
     {
       date: "September 6, 2025",
       title: "GST 2.0: The Future of India's...",
       category: "Business",
-      gradient: "from-blue-500 to-cyan-500"
+      gradient: "from-blue-500 to-cyan-500",
     },
     {
       date: "June 11, 2025",
       title: "5 Industries that must Integrate Business...",
       category: "Industry",
-      gradient: "from-green-500 to-emerald-500"
-    }
+      gradient: "from-green-500 to-emerald-500",
+    },
   ];
 
   return (
@@ -93,7 +98,6 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto px-6 pt-12 pb-20">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
-              
               <h1 className="text-5xl md:text-5xl font-bold text-white leading-tight">
                 Best Software
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">
@@ -103,7 +107,10 @@ export default function HomePage() {
               </h1>
 
               <p className="text-xl text-blue-100 leading-relaxed">
-                Goanny Technologies Is A Leading Software Development Company In Pune. With 10 Years Of Experience In Custom Software Development, We Are The Best Results-Oriented Tech Company In Maharashtra.
+                Goanny Technologies Is A Leading Software Development Company In
+                Pune. With 10 Years Of Experience In Custom Software
+                Development, We Are The Best Results-Oriented Tech Company In
+                Maharashtra.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -121,7 +128,7 @@ export default function HomePage() {
               <div className="relative z-10 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-3xl p-8 backdrop-blur-sm border border-white/10">
                 <div className="bg-white/10 backdrop-blur-xl rounded-2xl p-16 flex items-center justify-center">
                   <div className="text-center">
-                    <img src='/Slider_img-277x300.png' alt=''/>
+                    <img src="/Slider_img-277x300.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -131,8 +138,15 @@ export default function HomePage() {
 
         {/* Bottom Wave */}
         <div className="absolute bottom-0 left-0 right-0">
-          <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
+          <svg
+            viewBox="0 0 1440 120"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
+              fill="white"
+            />
           </svg>
         </div>
       </section>
@@ -142,16 +156,24 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
             <div className="inline-block mb-4">
-              <span className="text-sm font-bold text-blue-600 uppercase tracking-wider bg-blue-50 px-4 py-2 rounded-full">Our Services</span>
+              <span className="text-sm font-bold text-blue-600 uppercase tracking-wider bg-blue-50 px-4 py-2 rounded-full">
+                Our Services
+              </span>
             </div>
             <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-              What we <span className="relative">
-                <span className="relative z-10 text-white px-6 py-2">Offer?</span>
+              What we{" "}
+              <span className="relative">
+                <span className="relative z-10 text-white px-6 py-2">
+                  Offer?
+                </span>
                 <span className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg"></span>
               </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Experience Both Technical & Digital Services Only With Goanny, The <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-rose-500 font-semibold">Best Software Development Company In Pune</span>
+              Experience Both Technical & Digital Services Only With Goanny, The{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-rose-500 font-semibold">
+                Best Software Development Company In Pune
+              </span>
             </p>
           </div>
 
@@ -161,25 +183,39 @@ export default function HomePage() {
                 key={index}
                 className="group relative bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 overflow-hidden"
               >
-                <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${service.color} rounded-full blur-3xl opacity-0 group-hover:opacity-30 transition-opacity duration-500`}></div>
-                
+                <div
+                  className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${service.color} rounded-full blur-3xl opacity-0 group-hover:opacity-30 transition-opacity duration-500`}
+                ></div>
+
                 <div className="relative">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                  <div
+                    className={`w-16 h-16 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300`}
+                  >
                     {service.icon}
                   </div>
-                  
+
                   <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-purple-600 transition-all">
                     {service.title}
                   </h3>
-                  
+
                   <p className="text-gray-600 mb-6 leading-relaxed">
                     {service.description}
                   </p>
-                  
+
                   <button className="group/btn flex items-center gap-2 text-blue-600 font-semibold hover:gap-3 transition-all">
                     Read More
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    <svg
+                      className="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
                     </svg>
                   </button>
                 </div>
@@ -193,7 +229,7 @@ export default function HomePage() {
                 key={dot}
                 onClick={() => setCurrentSlide(dot)}
                 className={`h-2 rounded-full transition-all duration-300 ${
-                  currentSlide === dot ? 'bg-blue-600 w-12' : 'bg-gray-300 w-2'
+                  currentSlide === dot ? "bg-blue-600 w-12" : "bg-gray-300 w-2"
                 }`}
               />
             ))}
@@ -203,8 +239,18 @@ export default function HomePage() {
             <button className="group relative bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-12 py-5 rounded-full font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50">
               <span className="relative z-10 flex items-center gap-3">
                 EXPLORE ALL SERVICES
-                <svg className="w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                <svg
+                  className="w-6 h-6 group-hover:translate-x-1 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  />
                 </svg>
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -219,16 +265,27 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="inline-flex items-center gap-3 bg-yellow-400 px-4 py-2 rounded-full mb-6">
-                <span className="text-sm font-bold text-gray-900 uppercase tracking-wide">About Goanny Technologies</span>
+                <span className="text-sm font-bold text-gray-900 uppercase tracking-wide">
+                  About Goanny Technologies
+                </span>
               </div>
 
               <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8 leading-tight">
-                Fully dedicated to the 
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600"> best solutions</span>.
+                Fully dedicated to the
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+                  {" "}
+                  best solutions
+                </span>
+                .
               </h2>
 
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                Goanny Technologies, is the leading tech-enabled Software Development company in Pune. With our expertise in product development and business automation using cutting-edge IT solutions, we can help businesses grow and increase their brand awareness. Our digital marketing services are designed to build businesses using the latest digital technology.
+                Goanny Technologies, is the leading tech-enabled Software
+                Development company in Pune. With our expertise in product
+                development and business automation using cutting-edge IT
+                solutions, we can help businesses grow and increase their brand
+                awareness. Our digital marketing services are designed to build
+                businesses using the latest digital technology.
               </p>
 
               <button className="group relative bg-gradient-to-r from-blue-600 to-purple-600 text-white px-10 py-4 rounded-full font-semibold text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl">
@@ -243,7 +300,9 @@ export default function HomePage() {
                 <div className="bg-white rounded-2xl p-16 flex items-center justify-center">
                   <div className="text-center">
                     <div className="text-8xl mb-4">🤝</div>
-                    <p className="text-gray-800 text-lg font-semibold">Team Collaboration</p>
+                    <p className="text-gray-800 text-lg font-semibold">
+                      Team Collaboration
+                    </p>
                   </div>
                 </div>
               </div>
@@ -261,8 +320,12 @@ export default function HomePage() {
 
         <div className="relative max-w-7xl mx-auto px-6">
           <div className="mb-12">
-            <span className="text-cyan-400 font-semibold mb-2 block">FEATURED PRODUCT</span>
-            <h2 className="text-4xl md:text-5xl font-bold">Our Featured Product</h2>
+            <span className="text-cyan-400 font-semibold mb-2 block">
+              FEATURED PRODUCT
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold">
+              Our Featured Product
+            </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-600 mt-4"></div>
           </div>
 
@@ -276,7 +339,10 @@ export default function HomePage() {
               </h3>
 
               <p className="text-xl text-blue-100 mb-10 leading-relaxed">
-                GoSMarTea is an all-in-one Business Automation Software that makes managing operations as refreshing as a tea break. From HR to sales, finance to analytics—handle it all on one smart, scalable platform.
+                GoSMarTea is an all-in-one Business Automation Software that
+                makes managing operations as refreshing as a tea break. From HR
+                to sales, finance to analytics—handle it all on one smart,
+                scalable platform.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -294,7 +360,9 @@ export default function HomePage() {
                 <div className="bg-gradient-to-br from-blue-800 to-indigo-800 rounded-2xl p-16 flex items-center justify-center">
                   <div className="text-center">
                     <div className="text-8xl mb-4">☕</div>
-                    <p className="text-white text-lg font-semibold">GoSMarTea</p>
+                    <p className="text-white text-lg font-semibold">
+                      GoSMarTea
+                    </p>
                   </div>
                 </div>
               </div>
@@ -307,7 +375,9 @@ export default function HomePage() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="inline-flex items-center gap-3 bg-gradient-to-r from-yellow-400 to-orange-400 px-4 py-2 rounded-full mb-12">
-            <span className="text-sm font-bold text-gray-900 uppercase tracking-wide">Grow With Us</span>
+            <span className="text-sm font-bold text-gray-900 uppercase tracking-wide">
+              Grow With Us
+            </span>
           </div>
 
           <div className="grid md:grid-cols-4 gap-12 items-center">
@@ -323,9 +393,13 @@ export default function HomePage() {
                   <span className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 group-hover:scale-110 transition-transform">
                     {stat.number}
                   </span>
-                  <span className="text-4xl group-hover:scale-125 transition-transform">{stat.icon}</span>
+                  <span className="text-4xl group-hover:scale-125 transition-transform">
+                    {stat.icon}
+                  </span>
                 </div>
-                <p className="text-lg font-semibold text-gray-700">{stat.label}</p>
+                <p className="text-lg font-semibold text-gray-700">
+                  {stat.label}
+                </p>
               </div>
             ))}
           </div>
@@ -337,9 +411,13 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
             <div className="inline-block mb-4">
-              <span className="text-sm font-bold text-purple-600 uppercase tracking-wider bg-purple-50 px-4 py-2 rounded-full">Our Blog</span>
+              <span className="text-sm font-bold text-purple-600 uppercase tracking-wider bg-purple-50 px-4 py-2 rounded-full">
+                Our Blog
+              </span>
             </div>
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900">Latest Blogs</h2>
+            <h2 className="text-5xl md:text-6xl font-bold text-gray-900">
+              Latest Blogs
+            </h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -355,19 +433,33 @@ export default function HomePage() {
                       <p className="text-gray-700 font-semibold">Blog Post</p>
                     </div>
                   </div>
-                  <div className={`absolute top-4 left-4 bg-gradient-to-r ${blog.gradient} px-4 py-2 rounded-full text-sm font-bold text-white shadow-lg`}>
+                  <div
+                    className={`absolute top-4 left-4 bg-gradient-to-r ${blog.gradient} px-4 py-2 rounded-full text-sm font-bold text-white shadow-lg`}
+                  >
                     {blog.category}
                   </div>
                 </div>
                 <div className="p-8">
-                  <p className="text-sm text-gray-500 mb-3 font-medium">{blog.date}</p>
+                  <p className="text-sm text-gray-500 mb-3 font-medium">
+                    {blog.date}
+                  </p>
                   <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-purple-600 transition-all">
                     {blog.title}
                   </h3>
                   <button className="flex items-center gap-2 text-blue-600 font-semibold group-hover:gap-3 transition-all">
                     Read More
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    <svg
+                      className="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
                     </svg>
                   </button>
                 </div>
@@ -387,7 +479,9 @@ export default function HomePage() {
                 <div className="p-16 flex items-center justify-center h-96">
                   <div className="text-center">
                     <div className="text-8xl mb-4">📍</div>
-                    <p className="text-gray-800 text-xl font-semibold">Our Location</p>
+                    <p className="text-gray-800 text-xl font-semibold">
+                      Our Location
+                    </p>
                   </div>
                 </div>
               </div>
@@ -398,20 +492,24 @@ export default function HomePage() {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
                   Reach out
                 </span>
-                <span className="block text-gray-900">for a free consultation</span>
+                <span className="block text-gray-900">
+                  for a free consultation
+                </span>
               </h2>
 
               <div className="space-y-6">
                 {[
                   "Your Vision, Our Priority – Available 24/7!",
                   "Anytime, Anywhere – We're Here 24/7 for You!",
-                  "24/7 Availability – Because Your Goals Don't Take a Break"
+                  "24/7 Availability – Because Your Goals Don't Take a Break",
                 ].map((text, index) => (
                   <div key={index} className="flex items-start gap-4 group">
                     <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform">
                       <span className="text-white text-sm font-bold">✓</span>
                     </div>
-                    <p className="text-lg text-gray-700 leading-relaxed">{text}</p>
+                    <p className="text-lg text-gray-700 leading-relaxed">
+                      {text}
+                    </p>
                   </div>
                 ))}
               </div>
